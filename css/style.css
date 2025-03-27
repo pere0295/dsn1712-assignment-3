@@ -52,10 +52,6 @@ h1 {
     text-align: center;
 }
 
-.wrapper {
-    max-width: 940px;
-    margin: 0 auto;
-}
 #about-me .wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -114,15 +110,22 @@ h3 {
     margin-bottom: 0;
 }
 
+#work .wrapper h2 {
+    max-width: 500px;
+    justify-self: center;
+}
+#work .wrapper p {
+    max-width: 650px;
+    justify-self: center;
+}
+#work .img-grid {
+    display: grid;
+}
+
+
 footer {
     background-color: #000;
     color: #fff;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.wrapper {
-    max-width: 940px;
-    margin: 0 auto;
-}
-
