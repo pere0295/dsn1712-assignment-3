@@ -131,6 +131,7 @@ h3 {
     grid-template-areas: 
     "div1 div1 div1 div2 div2 div2"
     "div3 div3 div4 div4 div5 div5";
+    padding-bottom: 2em;
 }
 
 .img-grid img:nth-child(1) {
