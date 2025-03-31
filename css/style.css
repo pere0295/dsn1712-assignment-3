@@ -4,6 +4,11 @@
 body {
     margin: 0;
 }
+
+img {
+    width: 100%;
+}
+
 header {
     padding: 1em;
     background-color: #000;
@@ -121,31 +126,31 @@ h3 {
 
 #work .img-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "div1 div1 div2"
-    "div3 div4 div5";
+    "div1 div1 div1 div2 div2 div2"
+    "div3 div3 div4 div4 div5 div5";
 }
 
-.img-grid :nth-child(1) {
-    width: 467px;
+.img-grid img:nth-child(1) {
+   
     grid-area: div1;
 }
-.img-grid :nth-child(2) {
-    width: 467px;
+.img-grid img:nth-child(2) {
+    
     grid-area: div2;
 }
-.img-grid :nth-child(3) {
-    width: 300px;
+.img-grid img:nth-child(3) {
+    
     grid-area: div3;
 }
-.img-grid :nth-child(4) {
-    width: 300px;
+.img-grid img:nth-child(4) {
+    
     grid-area: div4;
 }
-.img-grid :nth-child(5) {
-    width: 300px;
+.img-grid img:nth-child(5) {
+   
     grid-area: div5;
 }
 
