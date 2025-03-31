@@ -5,6 +5,7 @@ body {
     margin: 0;
 }
 header {
+    padding: 1em;
     background-color: #000;
     color: #fff;
 }
@@ -45,8 +46,7 @@ h1 {
     color: #fff;
     text-shadow: 2px 2px #000;
     background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     font-size: 3rem;
     text-align: center;
@@ -118,12 +118,41 @@ h3 {
     max-width: 650px;
     justify-self: center;
 }
+
 #work .img-grid {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "div1 div1 div2"
+    "div3 div4 div5";
+}
+
+.img-grid :nth-child(1) {
+    width: 467px;
+    grid-area: div1;
+}
+.img-grid :nth-child(2) {
+    width: 467px;
+    grid-area: div2;
+}
+.img-grid :nth-child(3) {
+    width: 300px;
+    grid-area: div3;
+}
+.img-grid :nth-child(4) {
+    width: 300px;
+    grid-area: div4;
+}
+.img-grid :nth-child(5) {
+    width: 300px;
+    grid-area: div5;
 }
 
 
+
 footer {
+    padding: 1em;
     background-color: #000;
     color: #fff;
     text-align: center;
